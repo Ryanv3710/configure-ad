@@ -49,10 +49,26 @@ The left side with the navigational list you'll see "IP configuration" once you 
 <br />
 
 <p>
-<img src="https://i.imgur.com/IQMm1Jt.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="100%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Now create the Client VM using the same resource group and same vnet. 
+</p>
+<br />
+
+<p>
+<img src="" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Now we need to ensure connectivity between client-1 and the domain controller. First, we need to login to client-1 and ping DC's private address. Notice once you ping the DC's IP address it will keep replying.
+</p>
+<br />
+
+<p>
+<img src="" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
 </p>
 <br />
 
