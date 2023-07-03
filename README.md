@@ -36,14 +36,23 @@ Once you created your resource group p"AD-lab" you'll begin to create your Domai
 <img src="https://i.imgur.com/aO8889M.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Set the domain controllers NIC (network interface card) IP address from private to static. To do so, navigate to DC's vm & click networking and where you see "network interface" you'll click that. 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/v6c3DM1.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+The left side with the navigational list you'll see "IP configuration" once you click that option you can then proceed to click the name & change the domain controller's IP address from private to static. 
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/IQMm1Jt.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Now create the Client VM using the same resource group and same vnet. 
+</p>
+<br />
+
