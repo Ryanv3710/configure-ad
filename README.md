@@ -24,11 +24,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
+<h3>1. Setup Resources In Azure</h3>
 <p>
 <img src="https://i.imgur.com/Hkeszlp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once you created your resource group p"AD-lab" you'll begin to create your Domain Controller VM. Take note of the vnet created with AD lab for the domain controller needs to have the same vnet. 
+Once you created your resource group "AD-lab" you'll begin to create your Domain Controller VM. Take note of the vnet created with AD lab for the domain controller needs to have the same vnet. 
 </p>
 <br />
 
@@ -49,18 +50,38 @@ The left side with the navigational list you'll see "IP configuration" once you 
 <br />
 
 <p>
-<img src="" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/gki4y0C.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Now create the Client VM using the same resource group and same vnet. 
 </p>
 <br />
 
+<h3> 2. Ensure connectivity between client and domain controller</h3>
+<p>
+<img src="https://i.imgur.com/MMuw8Wz.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+We now need to ensure connectivity between client-1 and the domain controller. Once you log into client-1 and ping DC private address you'll notice it fails. From there you will log into DC-1 using remote desktop connection and in the search bar once logged in type in "wf.msc" and click on inbound rules and enable ICMPv4. Now you'll see successful connectivity.
+</p>
+<br />
+
+<h3>3. installing Active Directory</h3>
+<p>
+<img src="https://i.imgur.com/8g3vsmL.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+In DC you will click on "add roles and features" and install active directory services
+<p>
+
+</p>
+<br />
+
 <p>
 <img src="" height="100%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+Notice the yellow caution sign once it finishes downloading. You'll click that and it will have an option saying to promote this server to a domain controller. 
 <p>
-Now we need to ensure connectivity between client-1 and the domain controller. First, we need to login to client-1 and ping DC's private address. Notice once you ping the DC's IP address it will keep replying.
+
 </p>
 <br />
 
@@ -72,3 +93,10 @@ Now we need to ensure connectivity between client-1 and the domain controller. F
 </p>
 <br />
 
+<p>
+<img src="" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+</p>
+<br />
