@@ -70,26 +70,37 @@ We now need to ensure connectivity between client-1 and the domain controller. O
 <p>
 <img src="https://i.imgur.com/8g3vsmL.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-In DC you will click on "add roles and features" and install active directory services
-<p>
 
+<p>
+In DC you will click on "add roles and features" and install active directory services. Upon successful completion notice the yellow caution sign once it finishes downloading. You'll click that and it will have an option saying to promote this server to a domain controller. Setup a new forest as "mydomain.com". It will then restart and you will login DC-1 as ther user "mydomain.com/labuser"
+</p>
+<br />
+
+<h3>4. Create an Admin & Normal user account in AD</h3>
+
+<p>
+<img src="https://i.imgur.com/W2VDluw.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p>
+In active directory users and computers were going to create some organizational units.
+
+<ul>
+  <li>Create an organizationl unit called "_EMPLOYEES"</li>
+  <li>Create an organizational unit called "_ADMIN"</li>
+</ul>
 </p>
 <br />
 
 <p>
-<img src="" height="100%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-Notice the yellow caution sign once it finishes downloading. You'll click that and it will have an option saying to promote this server to a domain controller. 
-<p>
-
-</p>
-<br />
-
-<p>
-<img src="" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/joTFOSE.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-
+Create an employee named "jane doe" (same password) wiht username of "jane_admin"
+  <ul>
+    <li>add jane_admin to "domain admins" Security Group by rick clicking on jane doe and clicking "add to group" and putting it in domain admins and check the name.</li>
+    <li>logout/close remote desktop connection to DC-1 and log back in as "mydomain.com\jane_admin"</li>
+    <li>Use jane_admin as your admin account from now on</li>
+  </ul>
 </p>
 <br />
 
