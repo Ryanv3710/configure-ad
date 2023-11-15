@@ -104,10 +104,29 @@ Create an employee named "jane doe" (same password) wiht username of "jane_admin
 </p>
 <br />
 
+<h3>5. Join Client-1 to your domain</h3>
 <p>
-<img src="" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/BCR5TE8.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+From Azure portal set client 1's DNS settings to DC-1's private IP address, after restart client-1.
 
+  <ul>
+    <li>Login to client-1 as the original local admin (labuser)</li>
+    <li>Go to settiings</li>
+    <li>Rename this pc (advanced)</li>
+    <li>change</li>
+    <li>use user/password used for jane_admin</li>
+  </ul>
+</p>
+
+<p>
+<img src="https://i.imgur.com/qiwqNTC.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Login to DC-1 to verify client-1 shows up in the active directory users and computers in the "computers" folder.
+  <ul>
+    <li>create a new OU named "_CLIENTS" and drag client-1 into that folder </li>
+  </ul>
 </p>
 <br />
