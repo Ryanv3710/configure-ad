@@ -1,4 +1,4 @@
-<p align="center">
+![image](https://github.com/Ryanv3710/configure-ad/assets/133434101/df524fc0-af47-4fb0-8a09-1b212adb6161)<p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
@@ -133,10 +133,134 @@ From Azure portal set client 1's DNS settings to DC-1's private IP address, afte
 
 <h3>6. Setup Remote Desktop for non administrative users on client-1</h3>
 <p>
-<img src="https://i.imgur.com/BCR5TE8.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/y220L6z.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 
+<ul>
+  <li>Log back into client-1 using jane_admin and from settings go to system properties to access remote desktop</li>
 
 
 </p>
+<br /> 
+<p>
+<img src="https://i.imgur.com/BQAoA8i.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<ul>
+  <li>We'll be allowing domain users to access remote desktop by adding and checking the name as shown</li>
+
+
+</p>
+<br /> 
+
+<p>
+<img src="https://i.imgur.com/BQAoA8i.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<ul>
+  <li>We'll be allowing domain users to access remote desktop by adding and checking the name as shown</li>
+  <li>Now you can login to client-1 normal</li>
+
+</p>
+<br /> 
+
+<h3>7. Create users and attempt to login to client-1 using one of the created users</h3>
+<p>
+<img src="https://i.imgur.com/kq5ExuB.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<ul>
+  <li>Log back into DC-1 as jane_admin</li>
+
+
+</ul>
+</p>
+<br /> 
+
+<p>
+<img src="https://i.imgur.com/BLttW8s.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<ul>
+  <li>open powershell_ise as an admin</li>
+
+
+
+</ul>
+</p>
+<br /> 
+
+<p>
+<img src="https://i.imgur.com/CdlALec.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<ul>
+  <li>Create a new file and paste contents of the file from thsi link --> https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1 </li>
+
+
+
+</ul>
+</p>
+<br /> 
+
+<p>
+<img src="https://i.imgur.com/V894mFP.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<ul>
+  <li>Once you run the script the accounts will begin to start getting created. </li>
+
+
+
+</ul>
+</p>
+<br /> 
+
+<p>
+<img src="https://i.imgur.com/6FvNMxY.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<ul>
+  <li>Observe the accounts being created in ADUC  </li>
+
+
+
+</ul>
+</p>
+<br /> 
+
+<p>
+<img src="https://i.imgur.com/6FvNMxY.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<ul>
+  <li>Pick whichever account you wish and take note of the name & password that is provided in the script pasted in powershell that is at the very top. Login to client-1 using the account name you chose and password  </li>
+
+
+
+</ul>
+</p>
+<br /> 
+
+<p>
+<img src="https://i.imgur.com/qR8Fs8s.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+<ul>
+  <li>Once you can successfully login the account chosen you are offically done.  </li>
+
+
+
+</ul>
+</p>
+<br /> 
