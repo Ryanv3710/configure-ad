@@ -130,3 +130,13 @@ From Azure portal set client 1's DNS settings to DC-1's private IP address, afte
   </ul>
 </p>
 <br />
+
+<h3>6. Setup Remote Desktop for non administrative users on client-1</h3>
+<p>
+<img src="https://i.imgur.com/BCR5TE8.png" height="100%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+
+
+</p>
